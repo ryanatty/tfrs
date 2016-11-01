@@ -1,0 +1,464 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 11px; line-height: 1.364em; background: url(i/bg.jpg) center 0;}
+
+body, button, input, select, textarea { font-family: sans-serif; color: #303030; }
+
+/* 
+ * These selection declarations have to be separate
+ * No text-shadow: twitter.com/miketaylr/status/12228805301
+ * Also: hot pink!
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #303030; }
+a:visited { color: #303030; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: 0; color: #ec008c; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+@font-face {font-family: 'LetterGotL-MedIta';src: url('f/leaguegothic/leaguegothic.eot');src: url('f/leaguegothic/leaguegothic.eot?#iefix') format('embedded-opentype'),url('f/leaguegothic/leaguegothic.woff') format('woff'),url('f/leaguegothic/leaguegothic.ttf') format('truetype');}
+
+@font-face {font-family: 'LetterGothic';src: url('f/lettergothic/1E3940_0_0.eot');src: url('f/lettergothic/1E3940_0_0.eot?#iefix') format('embedded-opentype'),url('f/lettergothic/1E3940_0_0.woff') format('woff'),url('f/lettergothic/1E3940_0_0.ttf') format('truetype');}
+
+h1 { font-family: LeagueGothic; font-size: 9em; margin: 0 0 5px; line-height: 1em;}
+
+h2 { font-family: LetterGothic; font-size: 2em; }
+
+h3 { font-family: LetterGothic; font-size: 1.5em; color: #6d6e6e; }
+
+h4 { font-size: 1em; }
+
+#heres-how { color: #6d6e6e; font-size: 1.4em; margin-top: 0;}
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { padding: 0 20px; border-left: 3px #303030 solid; margin: 0em; font-family: LetterGothic; text-align: justify; border-right: 3px #303030 solid;}
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+p { text-align: justify; }
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * Improve image quality when scaled in IE7
+ * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; }
+
+/*
+ * Correct overflow displayed oddly in IE9 
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+figcaption { font-family: LetterGothic; color: #6d6e6e; font-size: .9em; text-align: right; padding-right: 5px;}
+
+#rack {
+    margin: 0 0 15px;
+}
+#console {}
+#mics {}
+
+
+
+/* =============================================================================
+   Primary styles
+   Author: 
+   ========================================================================== */
+.left { float: left; }
+.right { float: right; }
+
+.container {
+    width: 892px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+}
+
+#big-logo {
+    display: block;
+    margin: 0 auto;
+    padding: 79px 0;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background: #303030;
+    border-bottom: 4px #fff solid;
+    padding: 10px 0 0;
+    position: fixed;
+    -webkit-box-shadow: 0px 2px 2px #303030;
+       -moz-box-shadow: 0px 2px 2px #303030;
+            box-shadow: 0px 2px 2px #303030;
+}
+#sml-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+#top .left {
+    float: left;
+    margin: 0 35px 0 0;
+}
+#top .right {
+    float: left;
+}
+
+#main {
+    padding: 70px 0 0;
+}
+
+#top .left {
+    float: left;
+    width: 557px;
+}
+#top .right {
+    float: right;
+    width: 300px;
+}
+#top .news { margin: 0 0 35px; }
+#top .news .left {
+    width: 210px;
+    margin: 0;
+}
+#top .news .left img { margin: 0; }
+#top .news .right {
+    float: left;
+    margin: 0 0 0 25px;
+    width: 322px;
+}
+#top .news h2 {
+    font-family: LeagueGothic;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin: 0 0 15px;
+    font-weight: normal;
+    line-height: 34px;
+}
+#top .news p {
+    text-align: justify;
+    margin: 0 0 50px;
+}
+
+#top .player {
+    width: 306px;
+    background: #303030;
+    margin: 0;
+    padding: 8px;
+}
+#top .player .left {
+    margin: 0;
+    width: 300px;
+}
+#top .player .right {}
+#top .player .play {
+    width: 19px;
+    height: 20px;
+    float: left;
+    background: url(i/play-pause.jpg);
+}
+#top .player .pause {
+    width: 19px;
+    height: 20px;
+    float: left;
+    background: url(i/play-pause.jpg) -19px 0;
+}
+#top .player .info {
+    float: left;
+    margin: 0 0 0 8px;
+}
+#top .player .info p {
+  color: #fff;
+  margin: 0;
+  line-height: 10px;
+}
+#top .player .info .artist {
+    font-weight: bold;
+}
+#top .player .info .track {
+    font-size: 10px;
+}
+
+#lower {
+    margin: 36px 0 0;
+}
+#lower .left {
+    width: 260px;
+}
+#lower .right{}
+
+article {
+    margin: 0 0 36px;
+}
+
+article .info {
+    width: 193px;
+    float: left;
+    text-align: right;
+}
+
+article h2 {
+    margin-bottom: 0;
+}
+article h3 {
+    margin-top: 10px;
+}
+article h4 {
+    margin: 20px 0 5px;
+}
+
+article p {
+    text-align: right;
+}
+
+article img {
+    float: right;
+    margin: 0 0 0 15px;
+}
+
+#mapview { margin-top: 30px; }
+
+#mapview #map { display: none; }
+
+footer { 
+    margin: 30px 0 0;
+    background: url(i/footer-bg.jpg) center 0;
+     color: #fff;
+}
+
+footer h2 {
+    margin-top: 0;
+    font-family: LeagueGothic;
+    font-size: 34px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0 0 15px;
+    line-height: 34px;
+}
+
+footer sup {
+    font-family: arial;
+    font-size: 10px;
+}
+
+footer .left {
+    width: 144px;
+    float: left;
+}
+footer .middle {
+    width: 400px;
+    float: left;
+    margin: 0 0 0 38px;
+}
+footer .right {
+    float: left;
+    width: 272px;
+    margin: 48px 0 0 38px;
+}
+
+table {
+    width: 100%;
+    font-family: Arial;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 50px;
+}
+
+td { padding: 5px; }
+
+.col1 { width: 140px; }
+.col2 { width: 80px; }
+.col3 { width: 70px; }
+
+.odd {
+    background: #fff;
+    color: #303030;
+}
+
+td span {
+    display: block;
+    font-weight: normal;
+    padding: 0 0 0 5px;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+thead {
+    font-family: LetterGothic;
+    font-size: 18px;
+    color: #8f8f8f;
+}
+
+footer aside h2 {
+    font-family: LetterGothic;
+    font-size: 20px;
+    color: #8f8f8f;
+}
+
+footer aside a {
+    color: #fff;
+}
+
+dt {
+    float: left;
+    display: block;
+    width: 10px;
+}
+dd {
+    float: left;
+    text-align: justify;
+    width: 252px;
+    margin: 0 0 20px 10px;
+}
+
+#copyright {
+    float: right;
+    margin: 330px 0 20px;
+    color: #fff;
+}
+
+.clients {
+    list-style: none;
+    margin: 0;
+}
+
+
+
+/* =============================================================================
+   Non-semantic helper classes
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* =============================================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 1024px) {
+  #mapview #mobile { display: none; }
+  #mapview #map { display: block; }
+}
+
+
+/* =============================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
