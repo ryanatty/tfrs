@@ -14,6 +14,14 @@
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=371108509571758";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
   <!--
   <div id="baseline-overlay"></div>
@@ -32,9 +40,9 @@
           <div></div><h2>Recording Studios</h2>
         </hgroup>
 
-        <button class="play"></button>
+        <!--<button class="play"></button>-->
 
-        <p>Check out the film to learn more</p>
+        <!--<p>Check out the film to learn more</p>-->
       </div>
 
       <div id="gears">
@@ -48,9 +56,11 @@
       </div>
     </div>
 
+    <!--
     <div class="video">
       <iframe src="http://player.vimeo.com/video/37222428?title=0&byline=0&portrait=0&color=ff0179&hd=1&api=1&player_id=player1" id="player1" class="vimeo" width="711" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
+    -->
 
   </section>
 
@@ -58,7 +68,11 @@
     <?php include 'inc/header.php' ?>
   </header>
 
-  <section id="get-started">
+  <iframe style="margin:50px auto 30px;display:block;" width="853" height="480" src="https://www.youtube.com/embed/UX_pHCDMrc8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+  <section id="get-started" style="border:0">
+
+
     <hgroup>
       <h1><span>OK,</span> lets get started on <span>Your next project!</span></h1>
       <h3>We’ve designed a plan that meets your project’s needs.</h3>

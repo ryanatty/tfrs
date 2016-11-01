@@ -460,7 +460,8 @@ footer small { display: block; text-align: center; margin: 10px 0 0; color: #808
 }
 
 .top hgroup {
-  padding: 60px 0 0;
+  /*padding: 60px 0 0;*/
+  padding: 120px 0 0;
   position: relative;
   z-index: 10;
 }

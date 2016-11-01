@@ -23,7 +23,7 @@
     <?php include 'inc/header.php' ?>
   </header>
 
-  <section class="top">
+  <section class="top" style="height:330px">
 
     <div class="splash">
       <div class="top-content">
@@ -32,9 +32,11 @@
           <h1 class="b">what's <span>Best</span> for <span>Your Project!</span></h1>
         </hgroup>
 
+<!--
         <button class="play"></button>
 
         <p>Check out the film to learn more</p>
+-->
       </div>
 
       <div id="gears">
@@ -48,9 +50,11 @@
       </div>
     </div>
 
+<!--
     <div class="video">
       <iframe src="http://player.vimeo.com/video/37707795?title=0&byline=0&portrait=0&color=ff0179&hd=1&api=1&player_id=player1" id="player1" class="vimeo" width="642" height="362" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
+-->
 
   </section>
 
